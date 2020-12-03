@@ -45,3 +45,5 @@ function ProjectList(props) {
     </React.Fragment>
   );
 }
+
+export default ProjectList;
