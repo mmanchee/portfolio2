@@ -1,6 +1,9 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
-function Future() {
+const Future = (props) => {
+  const { onChangePage } = props;
+  
   return (
     <React.Fragment>
       <p>A to do list for the future</p>
@@ -9,6 +12,10 @@ function Future() {
       <p></p>
     </React.Fragment>
   );
+}
+
+Future.propTypes = {
+  onChangePage: PropTypes.func
 }
 
 export default Future;

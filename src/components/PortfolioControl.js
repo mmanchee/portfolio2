@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import NavBar from './NavBar';
 import AboutMe from './AboutMe';
 import Future from './Future';
 import ProjectList from './ProjectList';
+import NavBar from './NavBar';
 
 
 const PortfolioControl = () => {
@@ -29,7 +29,12 @@ const PortfolioControl = () => {
   }
   return (
     <React.Fragment>
-      {currentlyVisibleState}
+      <div className='col-4'>
+        <NavBar onChangePage = {changePage}/>
+      </div>
+      <div className='col-8'>
+        {currentlyVisibleState}
+      </div>
     </React.Fragment>
   )
 }

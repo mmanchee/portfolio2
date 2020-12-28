@@ -1,14 +1,16 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import NavBar from './NavBar';
 import PortfolioControl from './PortfolioControl';
 
-function App() {
+const App = () => {
+  
   return (
     <React.Fragment>
-      <div>
+      <div id='contain'>
         <Header />
-        <div>
+        <div className='row spacing'>
           <PortfolioControl />
         </div>
         <Footer />
