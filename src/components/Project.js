@@ -21,7 +21,8 @@ function Project(props) {
 Project.propTypes = {
   Name: PropTypes.string,
   Description: PropTypes.string,
-  Link: PropTypes.string
+  Link: PropTypes.string,
+  Img: PropTypes.string
 };
 
 export default Project;

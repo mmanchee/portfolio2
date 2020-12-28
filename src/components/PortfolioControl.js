@@ -1,27 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from './NavBar';
 import AboutMe from './AboutMe';
 import Future from './Future';
-import Projects from './ProjectList';
-
-class PortfolioControl extends React.Component {
+import ProjectList from './ProjectList';
 
 
-  render() {
-    currentlyVisibleState = <AboutMe />
-    currentlyVisibleState = <Projects />
-    currentlyVisibleState = <Future />
-    return (
-      <React.Fragment>
-        <div>
-          <NavBar />
-        </div>
-        <div>
-          {currentlyVisibleState}
-        </div>
-      </React.Fragment>
-    );
+const PortfolioControl = () => {
+  const [page, setPage] = useState('')
+
+  const changePage = newPage => {
+    setPage(newPage);
   }
+
+  let currentlyVisibleState = null;
+
+  switch (page) {
+    case 'AboutMe':
+      currentlyVisibleState = <AboutMe />
+      break;
+    case 'ProjectList':
+      currentlyVisibleState = <ProjectList />
+      break;
+    case 'Future':
+      currentlyVisibleState = <Future />
+      break;
+    default:
+      currentlyVisibleState = null
+  }
+  return (
+    <React.Fragment>
+      {currentlyVisibleState}
+    </React.Fragment>
+  )
 }
 
 export default PortfolioControl;

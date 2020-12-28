@@ -24,6 +24,12 @@ function AboutMe() {
         <li>Studies: <em>HTML, CSS, JavaScript, C#/.NET, MySQL, React</em></li>
         <li>Dates: <em>2020 -</em></li>
       </ul>
+      <p>More about Me</p>
+      <ul>
+        <li>I like Gaming: RPG, Puzzle games, and D&D</li>
+        <li>I like learning on YouTube about Science, Politics, and lifes curiosities</li>
+        <li> I like Movies and TV</li>
+      </ul>
     </React.Fragment>
   )
 }
