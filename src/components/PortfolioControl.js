@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import AboutMe from './AboutMe';
 import Future from './Future';
 import ProjectList from './ProjectList';
-import NavBar from './NavBar';
+import Header from './Header';
+import Footer from './Footer';
 
 
 const PortfolioControl = () => {
@@ -29,12 +30,13 @@ const PortfolioControl = () => {
   }
   return (
     <React.Fragment>
-      <div className='col-4'>
-        <NavBar onChangePage = {changePage}/>
+      <Header onChangePage = {changePage}/>
+      <div className='row spacing justify-content-center'>
+        <div className='col-8'>
+          {currentlyVisibleState}
+        </div>
       </div>
-      <div className='col-8'>
-        {currentlyVisibleState}
-      </div>
+      <Footer />
     </React.Fragment>
   )
 }
