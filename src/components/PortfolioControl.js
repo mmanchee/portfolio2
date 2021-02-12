@@ -4,6 +4,7 @@ import Future from './Future';
 import ProjectList from './ProjectList';
 import Header from './Header';
 import Footer from './Footer';
+import { Grid } from '@material-ui/core';
 
 
 const PortfolioControl = () => {
@@ -30,13 +31,19 @@ const PortfolioControl = () => {
   }
   return (
     <React.Fragment>
-      <Header onChangePage = {changePage}/>
-      <div className='row spacing justify-content-center'>
-        <div className='col-8'>
-          {currentlyVisibleState}
-        </div>
-      </div>
-      <Footer />
+      <Grid container direction='column'>
+        <Grid item xs={12}>
+          <Header onChangePage = {changePage}/>
+        </Grid>
+        <Grid item container xs={12} justify='center' alignItems='flex-start'>
+          <Grid item xs={10} md={8}>
+            {currentlyVisibleState}
+          </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          <Footer />
+        </Grid>
+      </Grid>
     </React.Fragment>
   )
 }
