@@ -6,10 +6,7 @@ const App = () => {
   
   return (
     <React.Fragment>
-      <div id='contain'>
-          <PortfolioControl />
-      </div>
-      
+      <PortfolioControl />
     </React.Fragment>
   );
 }
