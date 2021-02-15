@@ -14,6 +14,8 @@ const Header = (props) => {
           <a className='nav-item' onClick = { () => onChangePage('AboutMe') }>About Me</a>
           <a className='nav-item' onClick = { () => onChangePage('ProjectList') }>Projects</a>
           <a className='nav-item' onClick = { () => onChangePage('Future') }>Future Development</a>
+          <a className='nav-item' onClick = { () => onChangePage('Sample') }>samp</a>
+          
         </div>
       </div>
     </React.Fragment>

@@ -4,13 +4,13 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import { Work, Add, Search, School } from '@material-ui/icons';
 
 // images for page
-import image1 from 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97';
-import image2 from 'https://images.unsplash.com/photo-1540745291638-2c71059043e5';
-import image3 from 'https://images.unsplash.com/photo-1594312915251-48db9280c8f1';
-import logo from '../../../images/JSMlogoBlue.png';
-import office1a from '../../../images/swagger/office1.jpeg';
-import office2a from '../../../images/swagger/office2.jpeg';
-import office3a from '../../../images/swagger/office3.jpeg';
+const image1 = "https://images.unsplash.com/photo-1517694712202-14dd9538aa97";
+const image2 = "https://images.unsplash.com/photo-1540745291638-2c71059043e5";
+const image3 = "https://images.unsplash.com/photo-1594312915251-48db9280c8f1";
+const logo = "../../../images/JSMlogoBlue.png";
+const office1a = "../../../images/swagger/office1.jpeg";
+const office2a = "../../../images/swagger/office2.jpeg";
+const office3a = "../../../images/swagger/office3.jpeg";
 
 const ColorButton = withStyles(() => ({
   root: {
