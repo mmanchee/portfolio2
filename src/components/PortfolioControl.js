@@ -4,12 +4,12 @@ import Future from './Future';
 import ProjectList from './ProjectList';
 import Header from './Header';
 import Footer from './Footer';
-import Sample from "./SampleFront";
+import Home from "./Home";
 import { Grid } from '@material-ui/core';
 
 
 const PortfolioControl = () => {
-  const [page, setPage] = useState('')
+  const [page, setPage] = useState('Home')
 
   const changePage = newPage => {
     setPage(newPage);
@@ -33,7 +33,7 @@ const PortfolioControl = () => {
   if (page === 'Home') {
     return (
       <React.Fragment>
-        <Sample onChangePage = {changePage}/>
+        <Home onChangePage = {changePage}/>
       </React.Fragment>
     )
   } else {

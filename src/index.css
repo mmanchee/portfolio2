@@ -77,3 +77,7 @@ body {
 .info {
   font-size: 15px;
 }
+.mikeImage {
+  width: 150px;
+  float: right;
+}

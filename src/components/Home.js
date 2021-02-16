@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { Button, Grid, TextField, Typography, Paper, Icon, ButtonGroup, InputBase, Divider, MenuList, MenuItem, FormControl, InputLabel, Select } from "@material-ui/core";
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import { Contacts, FormatListNumbered, Build } from '@material-ui/icons';
+import { Contacts, FormatListNumbered, Build, GitHub } from '@material-ui/icons';
 import PropTypes from 'prop-types';
 
 // images for page
@@ -116,13 +116,13 @@ const Home = (props) => {
       <Grid container direction='column' className={classes.root} spacing={5}>
         <Grid item container xs={6} direction='row' >
           <Grid item xs={12} md={4} className={classes.root}>                
-            <Button onClick = { () => onChangePage('AboutMe') } startIcon={<Contacts />}>About Me</Button>
+            <Button onClick = { () => onChangePage('AboutMe') } startIcon={<Contacts />}><strong>About Me</strong></Button>
           </Grid>
           <Grid item xs={12} md={4} className={classes.root}>
-            <Button onClick = { () => onChangePage('ProjectList') } startIcon={<FormatListNumbered />}>Projects</Button>
+            <Button onClick = { () => onChangePage('ProjectList') } startIcon={<FormatListNumbered />}><strong>Projects</strong></Button>
           </Grid>
           <Grid item xs={12} md={4} className={classes.root}>
-            <Button onClick = { () => onChangePage('Future') } startIcon={<Build />}>Future Work</Button>
+            <Button onClick = { () => onChangePage('Future') } startIcon={<Build />}><strong>Future Work</strong></Button>
           </Grid>
         </Grid>
         <Grid item xs={8} className={classes.root}>
@@ -174,19 +174,19 @@ const Home = (props) => {
         </Grid>
         <Grid item container direction='row' xs={8} className={classes.root}>
           <Grid item container direction='column' xs={12} md={4} className={classes.root}>
-            <Typography><strong>jsDnD</strong></Typography>
+            <Button endIcon={<GitHub />} href='https://github.com/mmanchee/jsDnD'><strong>jsDnD</strong></Button>
             <Paper>
               <a href='https://github.com/mmanchee/jsDnD'><img src={dnd} className={classes.sec6Img} /></a>
             </Paper>
           </Grid>
           <Grid item container direction='column' xs={12} md={4} className={classes.root}>
-            <Typography><strong>Star Racks 2</strong></Typography>
+            <Button endIcon={<GitHub />} href='https://github.com/mmanchee/StarRacks2'><strong>Star Racks 2</strong></Button>
             <Paper>
               <a href='https://github.com/mmanchee/StarRacks2.1'><img src={star} className={classes.sec6Img} /></a>
             </Paper>
           </Grid>
           <Grid item container direction='column' xs={12} md={4} className={classes.root}>
-            <Typography><strong>Good Foods</strong></Typography>
+            <Button endIcon={<GitHub />} href='https://github.com/mmanchee/good-food'><strong>Good Foods</strong></Button>
             <Paper>
               <a href='https://github.com/mmanchee/good-food-demo'><img src={good} className={classes.sec6Img} /></a>
             </Paper>
